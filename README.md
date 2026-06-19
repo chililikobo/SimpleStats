@@ -1,9 +1,9 @@
 # Simple Stats
 
-![Latest Release](https://badgen.net/github/release/chililikobo/SimpleStats?color=blue)
-![Downloads](https://badgen.net/github/assets-dl/chililikobo/SimpleStats?color=228b22)
-![License](https://badgen.net/badge/license/Freeware/purple)
-![Platform](https://badgen.net/badge/platform/Windows/black)
+[![Latest Release](https://badgen.net/github/release/chililikobo/SimpleStats)](https://github.com/chililikobo/SimpleStats/releases/latest)
+[![Downloads](https://badgen.net/github/assets-dl/chililikobo/SimpleStats)](https://github.com/chililikobo/SimpleStats/releases/latest)
+[![License](https://badgen.net/badge/license/Freeware/purple)](#%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84--terms-of-use)
+[![Platform](https://badgen.net/badge/platform/Windows/black)](#%E5%8B%95%E4%BD%9C%E7%92%B0%E5%A2%83--system-requirements)
 
 **Simple Stats** は、PCのリソース状況とネットワーク情報をコンパクトに表示する、単体動作のリアルタイム・システムモニターです。  
 デスクトップの片隅で、PCの健康状態を最小限の負荷で可視化することをコンセプトとしています。
