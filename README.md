@@ -5,6 +5,8 @@
 [![License](https://badgen.net/badge/license/Freeware/purple)](#terms--disclaimer)
 [![Platform](https://badgen.net/badge/platform/Windows%2010%20%2F%2011%20(x64)/black)](https://chililikobo.github.io/en/simple-stats.html)
 
+![ObsidianGlass_Standard_en.png](ObsidianGlass_Standard_en.png)
+
 [English](#english) | [日本語](#日本語)
 
 ---
