@@ -18,10 +18,10 @@ Simple Stats is an ultra-lightweight, standalone desktop telemetry HUD for Windo
 ### Key Features
 - **High-Precision Monitoring & 60s Sparklines**: Visualizes Task Manager-aligned CPU utility (`PDH % Processor Utility` / `CPUID`), RAM usage, unprivileged deduplicated physical disk I/O, per-drive Used & Free capacity bars, and network throughput (`Kbps` / `Mbps` / `Gbps`) with arc gauges and 60-second dynamic sparklines.
 - **Non-Intrusive Dual Display Modes**: Choose between **Wallpaper Layer Mode** (pinned behind windows, survives `Win+D`, hidden from Taskbar / `Alt+Tab`) and **Ghost Overlay Mode** (always-on-top click-through HUD with automatic mouse-proximity fade and `Ctrl + Alt` temporary unlock).
-- **Fullscreen Auto-Pause**: Automatically suspends rendering and background interaction timers during fullscreen games and presentations.
+- **Fullscreen Auto-Pause**: Automatically hides the HUD and suspends rendering and background interaction timers while a fullscreen game or presentation runs on the same monitor, then automatically restores it on exit.
 - **4 Themes, 3 Slim Layouts & 3 Font Sizes**: Switch between *Obsidian Glass*, *Pure Wallpaper* (frameless), *Cyber Cyan*, and *Frost Light* across *Standard*, *Minimal Zen*, and *Compact Mini* layouts with *Small* / *Medium* / *Large* font scaling.
 - **Active NIC Auto-Tracking & 1-Click Copy**: Automatically follows the active network adapter (displaying Adapter, IPv4/CIDR, Subnet, Gateway, and DNS) and copies any clicked row—or a full system snapshot—straight to the clipboard.
-- **Zero-Registry Startup & Native AOT Compiled**: Standalone single-file executable (~3.0 MB, ~0.3 MB working set / ~7 MB private bytes, no .NET runtime required, zero Windows Registry writes, automatic English / Japanese UI switching).
+- **Zero-Registry Startup & Native AOT Compiled**: Standalone single-file executable (~3.0 MB) with minimal memory footprint and near-zero CPU overhead—no .NET runtime required, zero Windows Registry writes, and automatic English / Japanese UI switching.
 
 ### Quick Start
 1. Place `SimpleStats.exe` in any folder and run it.
@@ -57,10 +57,10 @@ Simple Stats（シンプル・スタッツ）は、PCのリソース状況とネ
 ### 主な機能
 - **高精度リアルタイム監視 & 60秒スパークライン**: タスクマネージャー準拠のCPU使用率（`PDH % Processor Utility` / `CPUID`）、メモリ、管理者権限不要・物理ディスク重複排除対応のディスクI/O、各固定ドライブの使用量・空き容量バー、ネットワーク送受信速度（`Kbps` / `Mbps` / `Gbps`）をアークゲージと60秒波形グラフで可視化します。
 - **作業を邪魔しない2つの表示モード**: 他のウィンドウの背面に常駐し `Win+D` でも消えずタスクバー／`Alt+Tab` にも出ない「**壁紙レイヤー固定**」と、マウス接近で自動透過フェードし **Ctrl + Alt** キー押下中のみ操作できる「**最前面ゴーストHUD**」から選択可能。
-- **全画面自動一時停止**: フルスクリーンゲームやプレゼン実行中は自動で描画と補助タイマーを停止し、バックグラウンド負荷を極限まで抑えます。
+- **全画面自動一時停止**: 同じモニター上でフルスクリーンゲームやプレゼンが実行されている間は自動で一時非表示にして描画・補助タイマーを停止し、終了時に自動で再表示します（別モニター配置時は継続表示）。
 - **4種のテーマ・3種のスリムレイアウト・3段階フォントサイズ**: *Obsidian Glass* / *Pure Wallpaper*（背景なし）/ *Cyber Cyan* / *Frost Light* の4テーマ、*Standard* / *Minimal Zen* / *Compact Mini* の3レイアウト、*小* / *中* / *大* のフォントサイズ切替に対応。
 - **アクティブNIC自動追従 & ワンクリックコピー**: OSルートおよび通信量に応じて使用中のNICへ自動追従し（アダプタ・IPv4/CIDR・サブネット・GW・DNS表示）、各行の左クリックで値を即座にクリップボードへコピーできます。
-- **完全レジストリ不使用 & Native AOT コンパイル**: 単一の実行ファイル（約 3.0 MB、実測ワーキングセット約 0.3 MB／プライベート約 7 MB）で動作し、.NETランタイムの追加インストール不要・Windowsレジストリ一切不使用・OS言語に応じた英語／日本語UI自動切替に対応しています。
+- **完全レジストリ不使用 & Native AOT コンパイル**: 単一の実行ファイル（約 3.0 MB）・超省メモリ設計・ほぼ 0% の低 CPU 負荷で動作し、.NETランタイムの追加インストール不要・Windowsレジストリ一切不使用・OS言語に応じた英語／日本語UI自動切替に対応しています。
 
 ### 使い方
 1. 任意のフォルダに `SimpleStats.exe` を配置して起動します。
