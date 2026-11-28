@@ -16,7 +16,7 @@
 Simple Stats is an ultra-lightweight, standalone desktop telemetry HUD for Windows that visualizes real-time PC resource metrics and network diagnostics in a sleek, non-intrusive widget.
 
 ### Key Features
-- **High-Precision Monitoring & 60s Sparklines**: Visualizes Task Manager-aligned CPU utility (`PDH % Processor Utility` / `CPUID`), RAM usage, unprivileged deduplicated physical disk I/O, per-drive Used & Free capacity bars, and network throughput (`Kbps` / `Mbps` / `Gbps`) with arc gauges and 60-second dynamic sparklines.
+- **High-Precision Monitoring & 60s Sparklines**: Visualizes Task Manager-aligned CPU utility (`PDH % Processor Utility` / `CPUID`), GPU utilization, VRAM usage, and GPU temperature (`DXGI` / `D3DKMT`), RAM usage, unprivileged deduplicated physical disk I/O, per-drive Used & Free capacity bars, and network throughput (`Kbps` / `Mbps` / `Gbps`) with arc gauges and 60-second dynamic sparklines.
 - **Non-Intrusive Dual Display Modes**: Choose between **Wallpaper Layer Mode** (pinned behind windows, survives `Win+D`, hidden from Taskbar / `Alt+Tab`) and **Ghost Overlay Mode** (always-on-top click-through HUD with automatic mouse-proximity fade and `Ctrl + Alt` temporary unlock).
 - **Fullscreen Auto-Pause**: Automatically hides the HUD and suspends rendering and background interaction timers while a fullscreen game or presentation runs on the same monitor, then automatically restores it on exit.
 - **4 Themes, 3 Slim Layouts & 3 Font Sizes**: Switch between *Obsidian Glass*, *Pure Wallpaper* (frameless), *Cyber Cyan*, and *Frost Light* across *Standard*, *Minimal Zen*, and *Compact Mini* layouts with *Small* / *Medium* / *Large* font scaling.
@@ -27,7 +27,7 @@ Simple Stats is an ultra-lightweight, standalone desktop telemetry HUD for Windo
 1. Place `SimpleStats.exe` in any folder and run it.
 2. Drag the HUD anywhere on your desktop (with 16px magnetic edge snapping) or choose a corner preset from the right-click menu.
 3. Right-click the HUD or system tray icon to switch Display Modes, Themes, Layouts, Font Sizes, Opacity, Refresh Interval (`1s` / `2s` / `5s` / `60s`), Fullscreen Pause, and Windows Auto-Start.
-4. Left-click any host, CPU, drive, or network row to copy its value. Single-click the tray icon to show/hide the HUD, or double-click it to copy the full system report.
+4. Left-click any host, CPU, GPU, drive, or network row to copy its value. Single-click the tray icon to show/hide the HUD, or double-click it to copy the full system report.
 
 ### System Requirements
 - **OS**: Windows 10 / Windows 11 (x64)
@@ -55,7 +55,7 @@ This application is built with the .NET NativeAOT runtime and native Windows API
 Simple Stats（シンプル・スタッツ）は、PCのリソース状況とネットワーク情報を控えめかつスタイリッシュに表示する、Windows向けの超軽量・単体動作デスクトップ常駐システムモニターです。
 
 ### 主な機能
-- **高精度リアルタイム監視 & 60秒スパークライン**: タスクマネージャー準拠のCPU使用率（`PDH % Processor Utility` / `CPUID`）、メモリ、管理者権限不要・物理ディスク重複排除対応のディスクI/O、各固定ドライブの使用量・空き容量バー、ネットワーク送受信速度（`Kbps` / `Mbps` / `Gbps`）をアークゲージと60秒波形グラフで可視化します。
+- **高精度リアルタイム監視 & 60秒スパークライン**: タスクマネージャー準拠のCPU使用率（`PDH % Processor Utility` / `CPUID`）、GPU使用率・VRAM使用量・GPU温度（`DXGI` / `D3DKMT`）、メモリ、管理者権限不要・物理ディスク重複排除対応のディスクI/O、各固定ドライブの使用量・空き容量バー、ネットワーク送受信速度（`Kbps` / `Mbps` / `Gbps`）をアークゲージと60秒波形グラフで可視化します。
 - **作業を邪魔しない2つの表示モード**: 他のウィンドウの背面に常駐し `Win+D` でも消えずタスクバー／`Alt+Tab` にも出ない「**壁紙レイヤー固定**」と、マウス接近で自動透過フェードし **Ctrl + Alt** キー押下中のみ操作できる「**最前面ゴーストHUD**」から選択可能。
 - **全画面自動一時停止**: 同じモニター上でフルスクリーンゲームやプレゼンが実行されている間は自動で一時非表示にして描画・補助タイマーを停止し、終了時に自動で再表示します（別モニター配置時は継続表示）。
 - **4種のテーマ・3種のスリムレイアウト・3段階フォントサイズ**: *Obsidian Glass* / *Pure Wallpaper*（背景なし）/ *Cyber Cyan* / *Frost Light* の4テーマ、*Standard* / *Minimal Zen* / *Compact Mini* の3レイアウト、*小* / *中* / *大* のフォントサイズ切替に対応。
